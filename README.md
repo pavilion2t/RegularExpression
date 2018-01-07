@@ -48,10 +48,23 @@ Regular Expression 按照某种规则去匹配符合条件的字符串（目的�
   ```
   "a1b2c3d4".replace(/[abc]/g, "YYY")    
   // "YYY1YYY2YYY3d4"       
-   "a1b2c3d4".replace(/[^abc]/g, "YYY")        
-   // "aYYYbYYYcYYYYYYYYY"   ^表示反向类    
-   ```   
-   
+  "a1b2c3d4".replace(/[^abc]/g, "YYY")        
+  // "aYYYbYYYcYYYYYYYYY"   ^表示反向类    
+  ```     
+  
+### 范围类        
+  ```      
+  "a1b2c3x7y8z9".replace(/[a-z]/g, "QQ")      
+  // "QQ1QQ2QQ3QQ7QQ8QQ9"     
+  "A1B2C3x7y8z9".replace(/[a-zA-Z]/g, "D")    
+  // "D1D2D3D7D8D9"    
+  "2015-02-28".replace(/[0-9]/g, "A")   
+  // "AAAA-AA-AA"    
+  "2015-02-28".replace(/[0-9-]/g, "A")       
+  // "AAAAAAAAAA"     
+  ``` 
+  
+### 预定义类
 
   
   
