@@ -24,10 +24,22 @@ Regular Expression 按照某种规则去匹配符合条件的字符串（目的�
    var reg = new RegExp("\\bis\\b" , "g");    
    "She is a girl. This is a Ipad".replace(reg, "IS")     
    // "She IS a girl. This IS a Ipad"      
-   ```     
-      
- 
- 
+   ```       
+   
+### 标识符    
+* g: 表示全局模式，即模式被应用于所有字符串   
+* i：表示不区分大小写模式（case-insensitive）   
+* m: 表示多行模式       
 
+  ```
+  "She is a girl. Is she?".replace(/\bis\b/g, "777")   
+  // "She 777 a girl. Is she?"      
+  "She is a girl. Is she?".replace(/\bis\b/gi, "777")      
+  "She 777 a girl. 777 she?"      
+  ```        
+  
+
+  
+  
 
 
