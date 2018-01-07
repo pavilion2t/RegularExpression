@@ -38,6 +38,20 @@ Regular Expression 按照某种规则去匹配符合条件的字符串（目的�
   "She 777 a girl. 777 she?"      
   ```        
   
+### 元字符
+> 正则表达式中有两种基本字符类型： 原义文本字符 、元字符 . * + ? ^ | \ () {} []    
+
+### 字符类   
+一般情况下正则表达式一个字符对应字符串一个字符 ab\t的含义是 "ab" + tab      
+有时希望匹配某类字符，我们使用元字符[]来构建一个简单的类   
+      
+  ```
+  "a1b2c3d4".replace(/[abc]/g, "YYY")    
+  // "YYY1YYY2YYY3d4"       
+   "a1b2c3d4".replace(/[^abc]/g, "YYY")        
+   // "aYYYbYYYcYYYYYYYYY"   ^表示反向类    
+   ```   
+   
 
   
   
