@@ -67,6 +67,25 @@ Regular Expression 按照某种规则去匹配符合条件的字符串（目的�
 ### 预定义类
 
   
+### jQuery src  
+```   
+   // 匹配数字
+	var core_pnum = /[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source,
+
+  // Used for splitting on whitespace
+	core_rnotwhite = /\S+/g,  
   
+  // 检查 HTML strings
+	// 防止XSS攻击 #id over <tag> to avoid XSS via location.hash (#9521)
+	// 严格识别 HTML (#11290: must start with <)
+	rquickExpr = /^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,
+
+	// Match a standalone tag
+	rsingleTag = /^<(\w+)\s*\/?>(?:<\/\1>|)$/,
+
+	// IE内核的前缀 ms 
+	rmsPrefix = /^-ms-/,
+	rdashAlpha = /-([\da-z])/gi  
+```
 
 
