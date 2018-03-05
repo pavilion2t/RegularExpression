@@ -76,16 +76,16 @@ Regular Expression 按照某种规则去匹配符合条件的字符串（目的�
 	core_rnotwhite = /\S+/g,  
   
   // 检查 HTML strings
-	// 防止XSS攻击 #id over <tag> to avoid XSS via location.hash (#9521)
-	// 严格识别 HTML (#11290: must start with <)
-	rquickExpr = /^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,
+  // 防止XSS攻击 #id over <tag> to avoid XSS via location.hash (#9521)
+  // 严格识别 HTML (#11290: must start with <)
+     rquickExpr = /^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,
 
-	// Match a standalone tag
-	rsingleTag = /^<(\w+)\s*\/?>(?:<\/\1>|)$/,
+  // Match a standalone tag
+     rsingleTag = /^<(\w+)\s*\/?>(?:<\/\1>|)$/,
 
-	// IE内核的前缀 ms 
-	rmsPrefix = /^-ms-/,
-	rdashAlpha = /-([\da-z])/gi  
+  // IE内核的前缀ms，转换大小写
+     rmsPrefix = /^-ms-/,
+     rdashAlpha = /-([\da-z])/gi  
 ```
 
 
